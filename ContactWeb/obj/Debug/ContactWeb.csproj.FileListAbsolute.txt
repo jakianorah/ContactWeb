@@ -117,3 +117,5 @@ C:\MSDev\ContactWeb\ContactWeb\obj\Debug\ContactWeb.csprojResolveAssemblyReferen
 C:\MSDev\ContactWeb\ContactWeb\obj\Debug\ContactWeb.csproj.CoreCompileInputs.cache
 C:\MSDev\ContactWeb\ContactWeb\obj\Debug\ContactWeb.dll
 C:\MSDev\ContactWeb\ContactWeb\obj\Debug\ContactWeb.pdb
+C:\MSDev\ContactWeb\ContactWeb\obj\Debug\ContactWeb.Migrations.InitialCreate.resources
+C:\MSDev\ContactWeb\ContactWeb\obj\Debug\ContactWeb.csproj.GenerateResource.Cache
