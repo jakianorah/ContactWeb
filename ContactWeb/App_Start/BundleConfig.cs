@@ -19,16 +19,20 @@ namespace ContactWeb
                         "~/js/lib/dataTables.bootstrap.min.js",
                         "~/js/lib/dataTables.colReorder.min.js"));
 
-     
-            
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+                        "~/js/lib/jquery-ui.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/css/bootstrap.min.css",
                       "~/css/jquery.dataTables.min.css",
-                      "~/css/jquery.dataTables_themeroller",
-                      "~/css/dataTables.bootstrap.min",
-                      "~/css/colReorder.dataTables.min",
-                      "~/css/site.css"));
+                      "~/css/jquery.dataTables_themeroller.css",
+                      "~/css/dataTables.bootstrap.min.css",
+                      "~/css/colReorder.dataTables.min.css",
+                      "~/css/jquery-ui.min.css",
+                      "~/css/jquery-ui.structure.min.css",
+                      "~/css/jquery-ui.theme.min.csss",
+                      "~/css/site.css"
+                      ));
         }
     }
 }

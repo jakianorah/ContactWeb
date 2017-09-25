@@ -19,26 +19,9 @@ namespace ContactWeb.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            var userId= new Guid(User.Identity.GetUserId());
-            return View(db.Contacts.Where(x => x.UserId == userId).ToList());
-            //try
-            //{
-            //    var userid = 
-            //    var userName = User.Identity.GetUserName();
-
-            //    ViewBag.UserId = userid;
-            //    ViewBag.UserName = userName;
-
-            //    ViewData["UserId"] = userid;
-            //    ViewData["UserName"] = userName;
-
-
-            //}
-            //catch (SystemException e)
-            //{
-            //    Console.WriteLine("Please Login");
-            //}
-            return View(db.Contacts.ToList());
+            var UserId = GetCurrentUserId();
+            return View(db.Contacts.Where(x => x.UserId == UserId).ToList());
+     
 
         }
 
@@ -51,7 +34,7 @@ namespace ContactWeb.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Contact contact = db.Contacts.Find(id);
-            if (contact == null)
+            if (contact == null || !EnsureIsUserContact(contact))
             {
                 return HttpNotFound();
             }
@@ -62,6 +45,7 @@ namespace ContactWeb.Controllers
         [Authorize]
         public ActionResult Create()
         {
+            ViewBag.UserId = GetCurrentUserId();
             return View();
         }
 
@@ -70,6 +54,7 @@ namespace ContactWeb.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create([Bind(Include = "Id,UserId,FirstName,LastName,Email,PhonePrimary,PhoneSecondary,Birthday,StreetAddress1,StreetAddress2,City,State,Zip")] Contact contact)
         {
             if (ModelState.IsValid)
@@ -78,7 +63,7 @@ namespace ContactWeb.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
+            ViewBag.UserId = GetCurrentUserId();
             return View(contact);
         }
 
