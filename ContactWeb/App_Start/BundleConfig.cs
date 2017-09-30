@@ -8,18 +8,18 @@ namespace ContactWeb
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            bundles.Add(new ScriptBundle("~/js/lib/jquery").Include(
                         "~/js/lib/jquery.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+            bundles.Add(new ScriptBundle("~/js/lib/bootstrap").Include(
                       "~/js/lib/bootstrap.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
+            bundles.Add(new ScriptBundle("~/js/lib/datatables").Include(
                         "~/js/lib/jquery.dataTables.min.js",
                         "~/js/lib/dataTables.bootstrap.min.js",
                         "~/js/lib/dataTables.colReorder.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+            bundles.Add(new ScriptBundle("~/js/lib/jqueryui").Include(
                         "~/js/lib/jquery-ui.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
