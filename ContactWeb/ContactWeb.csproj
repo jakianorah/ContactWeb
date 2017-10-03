@@ -237,20 +237,51 @@
     <Content Include="css\dataTables.bootstrap.min.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="css\images\ui-bg_diagonals-thick_8_333333_40x40.png" />
-    <Content Include="css\images\ui-bg_glass_40_111111_1x400.png" />
-    <Content Include="css\images\ui-bg_glass_55_1c1c1c_1x400.png" />
-    <Content Include="css\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
-    <Content Include="css\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
-    <Content Include="css\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
-    <Content Include="css\images\ui-bg_inset-hard_45_cd0a0a_1x100.png" />
-    <Content Include="css\images\ui-bg_inset-hard_55_ffeb80_1x100.png" />
-    <Content Include="css\images\ui-icons_222222_256x240.png" />
-    <Content Include="css\images\ui-icons_4ca300_256x240.png" />
-    <Content Include="css\images\ui-icons_bbbbbb_256x240.png" />
-    <Content Include="css\images\ui-icons_ededed_256x240.png" />
-    <Content Include="css\images\ui-icons_ffcf29_256x240.png" />
-    <Content Include="css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\fullcalendar.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_diagonals-thick_8_333333_40x40.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_glass_40_111111_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_glass_55_1c1c1c_1x400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_inset-hard_45_cd0a0a_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-bg_inset-hard_55_ffeb80_1x100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-icons_222222_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-icons_4ca300_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-icons_bbbbbb_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-icons_ededed_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-icons_ffcf29_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\images\ui-icons_ffffff_256x240.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="css\jquery-ui.min.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -295,6 +326,9 @@
     <Content Include="images\sort_desc_disabled.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="js\lib\fullcalendar.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="js\lib\jquery-ui.min.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -317,6 +351,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="js\lib\jquery.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="js\lib\moment.min.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Web.config" />

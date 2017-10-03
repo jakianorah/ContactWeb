@@ -22,6 +22,10 @@ namespace ContactWeb
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/js/lib/jquery-ui.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquerycalendar").Include(
+                        "~/js/lib/moment.min.js",
+                        "~/js/lib/fullcalendar.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/css/bootstrap.min.css",
                       "~/css/jquery.dataTables.min.css",
@@ -30,7 +34,8 @@ namespace ContactWeb
                       "~/css/colReorder.dataTables.min.css",
                       "~/css/jquery-ui.min.css",
                       "~/css/jquery-ui.structure.min.css",
-                      "~/css/jquery-ui.theme.min.csss",
+                      "~/css/jquery-ui.theme.min.css",
+                      "~/css/fullcalendar.css",
                       "~/css/site.css"
                       ));
         }
